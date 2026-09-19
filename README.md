@@ -1,3 +1,13 @@
+<div align="center">
+
+<img src="./assets/social-preview.svg" alt="WDA PHOTO AGENT — project visual" width="100%">
+
+## MOJEALTEREGO · PROJECT PROFILE
+
+</div>
+
+---
+
 # WDA Photo Agent
 
 Mobilny, produkcyjny rdzeń Wirtualnego Dyrektora Artystycznego do fotografii i postprodukcji. Projekt łączy analizę obrazu przez OpenAI z warstwą Adobe Firefly, zachowując rozdział między diagnozą, receptą edycyjną i wykonaniem operacji.
