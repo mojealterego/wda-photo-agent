@@ -8,6 +8,15 @@
 
 ---
 
+<!-- MOJEALTEREGO:PROJECT-STATUS:START -->
+> [!IMPORTANT]
+> **MojeAlterego project status:** `BETA`  
+> **Domain:** Photography / AI / Agents  
+> **Verification:** Integrated application architecture and production build path are documented; provider credentials and production deployment remain environment-dependent.  
+> **Status policy:** [MojeAlterego project status model](https://github.com/mojealterego/mojealterego/blob/main/docs/PROJECT-STATUS.md)
+<!-- MOJEALTEREGO:PROJECT-STATUS:END -->
+
+
 # WDA Photo Agent
 
 Mobilny, produkcyjny rdzeń Wirtualnego Dyrektora Artystycznego do fotografii i postprodukcji. Projekt łączy analizę obrazu przez OpenAI z warstwą Adobe Firefly, zachowując rozdział między diagnozą, receptą edycyjną i wykonaniem operacji.
@@ -44,9 +53,9 @@ Mobilny, produkcyjny rdzeń Wirtualnego Dyrektora Artystycznego do fotografii i 
 - Vercel
 - GitHub Actions
 
-Adobe opisuje Photoshop API v2 jako obecną generację produkcyjną i wskazuje v1 jako ścieżkę legacy; dlatego nowe adaptery należy projektować pod v2. citeturn456162search0turn456162search1
+Adobe opisuje Photoshop API v2 jako obecną generację produkcyjną i wskazuje v1 jako ścieżkę legacy; dlatego nowe adaptery należy projektować pod v2.
 
-Firefly Services udostępnia m.in. generowanie obrazów, Generative Fill oraz inne usługi creative automation; przykładowy endpoint generowania asynchronicznego jest obecnie dokumentowany jako `/v3/images/generate-async`. citeturn456162search6turn456162search10
+Firefly Services udostępnia m.in. generowanie obrazów, Generative Fill oraz inne usługi creative automation; przykładowy endpoint generowania asynchronicznego jest obecnie dokumentowany jako `/v3/images/generate-async`.
 
 ## Zmienne środowiskowe
 
@@ -76,8 +85,8 @@ npm run start
 
 ## Deployment Vercel
 
-Zaimportuj repozytorium `fotografandrzejmikulski-bit/wda-photo-agent` do Vercel. Vercel automatycznie rozpoznaje Next.js; następnie dodaj zmienne środowiskowe dla Production i wykonaj deployment. Przy połączeniu repozytorium z Vercel kolejne push'e mogą uruchamiać automatyczne deploymenty. citeturn277270search0turn277270search7
+Zaimportuj repozytorium `mojealterego/wda-photo-agent` do Vercel. Vercel automatycznie rozpoznaje Next.js; następnie dodaj zmienne środowiskowe dla Production i wykonaj deployment. Przy połączeniu repozytorium z Vercel kolejne push'e mogą uruchamiać automatyczne deploymenty.
 
 ## Ważne
 
-Ten projekt jest świadomie zbudowany warstwowo. Nie udaje, że każdy endpoint Adobe ma identyczny kontrakt. Przed włączeniem kolejnych operacji (Fill, maskowanie, Photoshop Actions, dokumenty PSD/Smart Objects, eksport) adapter musi zostać dopasowany do aktualnej wersji i uprawnień Adobe Developer Console. Adobe udostępnia osobne przewodniki dla Fill oraz Photoshop API v2. citeturn456162search5turn456162search7
+Ten projekt jest świadomie zbudowany warstwowo. Nie udaje, że każdy endpoint Adobe ma identyczny kontrakt. Przed włączeniem kolejnych operacji (Fill, maskowanie, Photoshop Actions, dokumenty PSD/Smart Objects, eksport) adapter musi zostać dopasowany do aktualnej wersji i uprawnień Adobe Developer Console. Adobe udostępnia osobne przewodniki dla Fill oraz Photoshop API v2.
